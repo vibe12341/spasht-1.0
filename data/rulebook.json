@@ -1,0 +1,66 @@
+[
+  {
+    "id": "RULE-IT-148A",
+    "title": "Income Tax Show Cause Notice u/s 148A - Right to Personal Hearing & Reply Window",
+    "applies_when": {
+      "notice_type": "income_tax_notice",
+      "keywords": ["148A", "Income Tax", "assessment", "unreported income", "section 148"],
+      "profile_conditions": {}
+    },
+    "rule_text": "Under Section 148A(b) of the Income-tax Act, 1961, the Assessing Officer must provide a show-cause notice granting between 7 and 30 days to explain why a notice u/s 148 should not be issued. Under Section 148A(c), the officer is mandated to consider the taxpayer's reply before passing any order. Taxpayers have the right to request all underlying material/reasons recorded.",
+    "action_for_user": "Submit a detailed written objection along with corroborating bank statements/computation via the e-filing portal. Request a virtual personal hearing if facts are disputed.",
+    "deadline_days": 30,
+    "source": "Income-tax Act, 1961, Section 148A(b) & CBDT Instruction No. 01/2022",
+    "last_verified": "2026-10-01",
+    "status": "TODO_VERIFY"
+  },
+  {
+    "id": "RULE-SCHOLARSHIP-SSP",
+    "title": "State/National Scholarship Discrepancy - Right to Cure and Grievance Redressal",
+    "applies_when": {
+      "notice_type": "scholarship_letter",
+      "keywords": ["scholarship", "SSP", "NSP", "discrepancy", "biometric", "caste certificate", "income certificate"],
+      "profile_conditions": {
+        "category": ["SC", "ST", "OBC", "EWS", "General"]
+      }
+    },
+    "rule_text": "Under the State Scholarship Portal (SSP Karnataka) and National Scholarship Portal (NSP) citizen charters, applications cannot be rejected outright due to certificate mismatch or pending institute verification without granting at least 15 days rectification window. Students are entitled to submit updated revenue certificates or seek college nod endorsement.",
+    "action_for_user": "Login to the scholarship portal, re-upload the verified RD number/caste-income certificate, and obtain physical verification endorsement from the College Nodal Officer.",
+    "deadline_days": 15,
+    "source": "Karnataka Social Welfare Department Guidelines 2024-25 & NSP Operating Manual v3.2",
+    "last_verified": "2026-09-15",
+    "status": "TODO_VERIFY"
+  },
+  {
+    "id": "RULE-NFSA-EKYC",
+    "title": "NFSA Ration Card e-KYC Renewal - Protection Against Arbitrary Ration Denial",
+    "applies_when": {
+      "notice_type": "ration_card_form",
+      "keywords": ["ration card", "NFSA", "e-KYC", "Aadhaar seeding", "Fair Price Shop", "biometric"],
+      "profile_conditions": {}
+    },
+    "rule_text": "Under Section 7 of the National Food Security Act, 2013 read with Ministry of Consumer Affairs guidelines, failure to complete biometric e-KYC or fingerprint mismatch cannot lead to immediate deletion of beneficiary name or denial of subsidized foodgrains. Fair Price Shops must provide alternative OTP verification, iris scan, or nominee authentication.",
+    "action_for_user": "Visit the nearest Fair Price Shop or Grama One / Jan Seva Kendra for POS biometric e-KYC. If fingerprint authentication fails, demand OTP or nominee alternative without loss of ration.",
+    "deadline_days": 21,
+    "source": "National Food Security Act, 2013, Section 7 and Supreme Court Directives in Suo Motu WP(C) 6/2020",
+    "last_verified": "2026-08-20",
+    "status": "TODO_VERIFY"
+  },
+  {
+    "id": "RULE-PENSION-JEEVAN",
+    "title": "Senior Pensioner Life Certificate - Right to Doorstep DLC & Grace Period",
+    "applies_when": {
+      "notice_type": "pension_notice",
+      "keywords": ["pension", "life certificate", "Jeevan Pramaan", "DLC", "PPO", "disbursement"],
+      "profile_conditions": {
+        "min_age": 60
+      }
+    },
+    "rule_text": "Under Central Pension Accounting Office (CPAO) and Department of Pension & Pensioners' Welfare (DoPPW) regulations, super-senior pensioners (80+) can submit life certificates starting October 1st, while all others have until November 30th with an automatic 60-day restoration window. Pensioners with disability or infirmity have the legal right to request Doorstep Banking Digital Life Certificate (DLC) via India Post Payments Bank.",
+    "action_for_user": "Generate Jeevan Pramaan via Aadhaar Face RD app on mobile, or book a postal Gramin Dak Sevak doorstep service via the Post Info app.",
+    "deadline_days": 30,
+    "source": "DoPPW O.M. No. 1(8)/2021-P&PW(H)-7468 and CPAO Guidelines for Pension Disbursement",
+    "last_verified": "2026-10-01",
+    "status": "TODO_VERIFY"
+  }
+]

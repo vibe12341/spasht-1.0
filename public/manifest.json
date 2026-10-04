@@ -1,0 +1,55 @@
+{
+  "id": "/",
+  "name": "Go Vision - Offline Notice Assistant",
+  "short_name": "GoVision",
+  "description": "Offline-first assistant powered by Gemma 4 to scan government notices, extract deadlines to calendar, and check citizen legal rights in English, Hindi, and Kannada.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0f172a",
+  "background_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Scan Notice",
+      "short_name": "Scan",
+      "description": "Photograph or upload a new government notice",
+      "url": "/?action=scan",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Talk to Agent",
+      "short_name": "Voice",
+      "description": "Speak with the Gemma 4 offline voice assistant",
+      "url": "/?action=voice",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "My Deadlines",
+      "short_name": "Deadlines",
+      "description": "View urgent government deadlines and add to calendar",
+      "url": "/?action=deadlines",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

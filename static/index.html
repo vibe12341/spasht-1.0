@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Go Vision - Offline Government Notice Assistant</title>
+  <link rel="manifest" href="/static/manifest.json">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" type="image/svg+xml" href="/static/icon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen">
+  <div id="app" class="max-w-4xl mx-auto px-4 py-4">
+    <header class="flex items-center justify-between pb-4 border-b border-slate-800">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-cyan-500 flex items-center justify-center font-bold text-white">GV</div>
+        <span class="font-bold text-base" id="header-title">Go Vision</span>
+        <span class="text-xs px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">100% Offline (Gemma 4)</span>
+      </div>
+      <div class="flex items-center gap-1.5" id="lang-picker">
+        <button onclick="setAppLang('en')" class="px-2 py-1 text-xs rounded bg-cyan-600 text-white font-bold">EN</button>
+        <button onclick="setAppLang('hi')" class="px-2 py-1 text-xs rounded bg-slate-800 text-slate-300 font-bold">हिन्दी</button>
+        <button onclick="setAppLang('kn')" class="px-2 py-1 text-xs rounded bg-slate-800 text-slate-300 font-bold">ಕನ್ನಡ</button>
+      </div>
+    </header>
+
+    <div class="mt-4 p-4 rounded-xl bg-slate-800 border border-slate-700">
+      <h2 class="font-bold text-sm text-cyan-400">Scan Government Notice (Offline Mode)</h2>
+      <p class="text-xs text-slate-400 mt-1">Gemma 4 E4B processes Hindi, Kannada, stamps and tables on-device.</p>
+      <div class="mt-3 flex gap-2">
+        <button onclick="simulateScan('sample-tax-148a')" class="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-xs font-semibold">1. Income Tax 148A</button>
+        <button onclick="simulateScan('sample-scholarship-ssp')" class="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-xs font-semibold">2. SSP Scholarship</button>
+        <button onclick="simulateScan('sample-ration-ekyc')" class="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-xs font-semibold">3. Ration Card e-KYC</button>
+      </div>
+    </div>
+
+    <div id="result-container" class="mt-4 p-4 rounded-xl bg-slate-800 border border-slate-700 hidden">
+      <div class="flex items-center justify-between pb-2 border-b border-slate-700">
+        <span class="text-xs font-bold text-cyan-400" id="res-authority">Authority</span>
+        <button onclick="downloadActiveICS()" class="px-2.5 py-1 bg-cyan-600 text-xs rounded font-bold">Add to Calendar (.ics)</button>
+      </div>
+      <p class="text-sm text-slate-200 mt-2" id="res-summary"></p>
+      <div class="mt-3 text-xs bg-slate-900 p-3 rounded-lg border border-slate-700 space-y-1">
+        <div class="font-bold text-rose-400" id="res-deadline">Deadline</div>
+        <div class="text-slate-300" id="res-action">Action required</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
